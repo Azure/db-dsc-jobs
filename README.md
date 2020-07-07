@@ -83,7 +83,7 @@ The JSON job templates provided in the `\jobs\` folder contains base values requ
   {
     "name": "Jinja job example",
     "workers": 1,
-    "notebookpath": "/NoteBookName",
+    "notebookpath": "/NoteBookPathLevel1/NoteBookName",
 
     "par_sourcesystem": "testSource",
     "par_sourcesystem_val": "testSource_val",
@@ -100,7 +100,6 @@ The JSON job templates provided in the `\jobs\` folder contains base values requ
     "description": "Not used in template, for reference"
   }
 ```
-If the Notebook is nested in a path, use the full path name. Example: "/NoteBookPathLevel1/NoteBookName" or "/NoteBookPathLevel1/NoteBookPathLevel2/NoteBookName"
 
 ### Jinja2 template snippet
 
