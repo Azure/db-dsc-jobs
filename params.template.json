@@ -1,0 +1,16 @@
+{
+    "authority_type": "",
+    "authority": "",
+    "client_id": "",
+
+    "resource": "2ff814a6-3304-4ab8-85cb-cd0e6f879c1d",
+    "databricks_uri": "",
+
+    "cert_thumbprint": "",
+    "private_key_file": "",
+    
+    "client_secret": "",
+    
+    "pat_token": ""
+
+}
