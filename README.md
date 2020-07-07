@@ -1,7 +1,7 @@
 # db-dsc-jobs
-This code is intended to alleviate manual effort required to manage jobs in a Databricks cluster.  The functionality has been designed with specific criteria and the code provided does not currently cover all potential scenarios.
+This code is intended to alleviate manual effort required to manage jobs in a Databricks workspace.  The functionality has been designed with specific criteria and the code provided does not currently cover all potential scenarios.
 
-There are two primary functions to this application; authenticate to a Databricks workspace, and then query, delete, and submit jobs in that workspace.  Both the authentication and jobs management are read in from JSON file which need to be created or modified prior to executing to application.
+There are two primary functions to this application; authenticate to a Databricks workspace, and then query, delete, and submit jobs in that workspace.  Both authentication and job management are read in from JSON files which need to be created or modified prior to executing to application.
 
 Usage:
 
@@ -83,7 +83,7 @@ The JSON job templates provided in the `\jobs\` folder contains base values requ
   {
     "name": "Jinja job example",
     "workers": 1,
-    "notebookpath": "/Covid19",
+    "notebookpath": "/NoteBookName",
 
     "par_sourcesystem": "testSource",
     "par_sourcesystem_val": "testSource_val",
@@ -100,6 +100,7 @@ The JSON job templates provided in the `\jobs\` folder contains base values requ
     "description": "Not used in template, for reference"
   }
 ```
+If the Notebook is nested in a path, use the full path name. Example: "/NoteBookPathLevel1/NoteBookName" or "/NoteBookPathLevel1/NoteBookPathLevel2/NoteBookName"
 
 ### Jinja2 template snippet
 
