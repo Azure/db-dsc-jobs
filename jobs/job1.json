@@ -1,7 +1,7 @@
 {
     "name": "Jinja job example",
     "workers": 1,
-    "notebookpath": "/Covid19",
+    "notebookpath": "/NoteBookPathLevel1/NoteBookName",
     "par_sourcesystem": "testSource",
     "par_sourcesystem_val": "testSource_val",
     "par_cdc_volume": "testcdc-volume",
