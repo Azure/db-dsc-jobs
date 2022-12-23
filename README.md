@@ -152,7 +152,7 @@ For Service Principal authentication, allowed methods are using a certificate as
 
 During the testing of this application, a locally generated certificate was generated using this method: https://github.com/AzureAD/microsoft-authentication-library-for-python/wiki/Client-Credentials
 
-Managed Identity (or Managed Service Identity, MSI) is a specific resource either created indepently in Azure (user-generated) or is created and associated to a resource when it is created in Azure (system-managed). MSIs do not use the MSAL library but instead call a known endpoint from the resource it's associated to in Azure.  In our testing, we created a managed identity and then associated it to a VM.  We are only able to successfully generate a token when calling the known endpoint from within that VM.  The resouce scope is also a necessary part of that API call and is specific to Databricks.
+Managed Identity (or Managed Service Identity, MSI) is a specific resource either created indepently in Azure (user-generated) or is created and associated to a resource when it is created in Azure (system-managed). MSIs do not use the MSAL library but instead call a known endpoint from the resource it's associated to in Azure.  In our testing, we created a managed identity and then associated it to a VM.  We are only able to successfully generate a token when calling the known endpoint from within that VM.  The resource scope is also a necessary part of that API call and is specific to Databricks.
 
 Personal Access Tokens allow for authenicating directly against the Databricks instance, since the token is generated from the service.
 
